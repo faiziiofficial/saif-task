@@ -28,7 +28,7 @@ jobs:
       - name: list files
         run: ls
       - name: build
-        run: docker build -t dexterquazi/saiftask
+        run: docker build -t dexterquazi/saiftask .
         
 
 
