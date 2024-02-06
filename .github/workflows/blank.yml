@@ -30,6 +30,6 @@ jobs:
       - name: build
         run: docker build -t dexterquazi/saiftask .
       - name: Auth
-        run: echo "##Love##1"|docker login docker.io -u dexterquazi  --password-stdin
+        run: echo  ${{ secrets.DOCKER_PASS }} |docker login docker.io -u dexterquazi  --password-stdin
 
 
